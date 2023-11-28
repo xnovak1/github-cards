@@ -16,7 +16,7 @@ const Form = ({ onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="GitHub username"
