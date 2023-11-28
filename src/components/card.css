@@ -1,12 +1,16 @@
 .github-profile {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: start;
     padding: 1rem;
+    margin-bottom: 0.5rem;
+    border: solid;
 }
 
 .github-profile img {
-    width: 80px;
     margin-right: 2rem;
+    height: 100px;
 }
 
 .github-profile__info {

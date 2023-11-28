@@ -1,17 +1,20 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import Card from "./components/Card";
+import Form from "./components/Form";
 import List from "./components/List";
 
 function App() {
-  const users = [<Card />, <Card />, <Card />];
+  const [profiles, setProfiles] = useState([]);
+
+  const addNewProfile = (profile) => {
+    setProfiles([...profiles, profile]);
+  };
 
   return (
     <div>
       <h1>The Github Cards App</h1>
-      <List cards={users} />
+      <Form onSubmit={addNewProfile} />
+      <List profiles={profiles} />
     </div>
   );
 }

@@ -1,14 +1,13 @@
 import React from "react";
 import "./card.css";
-import image from "../assets/react.svg";
 
-const Card = () => {
+const Card = ({ name, company, avatar_url }) => {
   return (
     <div className="github-profile">
-      <img src={image} />
+      <img src={avatar_url} />
       <div className="github-profile__info">
-        <h2>Name here.....</h2>
-        <p>Company here...</p>
+        <h2>{name}</h2>
+        <p>{company}</p>
       </div>
     </div>
   );
