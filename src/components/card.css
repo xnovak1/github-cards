@@ -1,0 +1,25 @@
+.github-profile {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.github-profile img {
+    width: 80px;
+    margin-right: 2rem;
+}
+
+.github-profile__info {
+    display: flex;
+    flex-direction: column;
+    line-height: 8px;
+}
+
+.github-profile__info h1 {
+    text-align: start;
+}
+
+.github-profile__info p {
+    font-size: 20px;
+    text-align: start;
+}
